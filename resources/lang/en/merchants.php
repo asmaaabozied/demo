@@ -1,0 +1,53 @@
+<?php
+
+return [
+    'plural' => 'Merchants',
+    'singular' => 'Merchant',
+    'empty' => 'There are no merchants',
+    'select' => 'Select Merchant',
+    'perPage' => 'Count Results Per Page',
+    'actions' => [
+        'list' => 'List Merchants',
+        'show' => 'Show Merchant',
+        'create' => 'Create a new merchant',
+        'new' => 'New',
+        'edit' => 'Edit Merchant',
+        'delete' => 'Delete Merchant',
+        'save' => 'Save',
+        'filter' => 'Filter',
+    ],
+    'messages' => [
+        'created' => 'The merchant has been created successfully.',
+        'updated' => 'The merchant has been updated successfully.',
+        'deleted' => 'The merchant has been deleted successfully.',
+    ],
+    'attributes' => [
+        'name' => 'Name',
+        'phone' => 'Phone',
+        'email' => 'Email',
+        'created_at' => 'The Date Of Join',
+        'old_password' => 'Old Password',
+        'password' => 'Password',
+        'password_confirmation' => 'Password Confirmation',
+        'type' => 'User Type',
+        'avatar' => 'Avatar',
+        'country_id' => 'Country',
+        'category_id' => 'Category',
+        'start_date' => 'Subscribtion Start Date',
+        'expire_date' => 'Subscribtion Expire Date',
+        'subscribtion' => 'Filter subscribtion',
+        'active' => 'Active Merchants',
+        'inactive' => 'In-active Merchants',
+        'account_expired' => 'Your subscription expired in ',
+        'renew_subscription' => 'Renew subscription',
+        'subscription_cost' => 'Subscription cost',
+    ],
+    'dialogs' => [
+        'delete' => [
+            'title' => 'Warning !',
+            'info' => 'Are you sure you want to delete the merchant ?',
+            'confirm' => 'Delete',
+            'cancel' => 'Cancel',
+        ],
+    ],
+];

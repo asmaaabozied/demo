@@ -1,0 +1,50 @@
+<?php
+
+return [
+    'singular' => 'القسم',
+    'plural' => 'الاقسام',
+    'empty' => 'لا يوجد اقسام.',
+    'count' => 'عدد الاقسام',
+    'search' => 'بحث',
+    'select' => 'اختر القسم',
+    'perPage' => 'عدد النتائج بالصفحة',
+    'filter' => 'ابحث عن قسم',
+    'subcategories' => 'الاقسام الفرعية',
+    'actions' => [
+        'list' => 'عرض الكل',
+        'create' => 'اضافة قسم',
+        'create-subcategory' => 'اضافة قسم فرعي',
+        'show' => 'عرض القسم',
+        'edit' => 'تعديل القسم',
+        'delete' => 'حذف القسم',
+        'options' => 'خيارات',
+        'save' => 'حفظ',
+        'filter' => 'بحث',
+    ],
+    'messages' => [
+        'created' => 'تم اضافة القسم بنجاح.',
+        'updated' => 'تم تعديل القسم بنجاح.',
+        'deleted' => 'تم حذف القسم بنجاح.',
+    ],
+    'attributes' => [
+        'name' => 'اسم القسم',
+        '%name%' => 'اسم القسم',
+        'description' => 'وصف القسم',
+        '%description%' => 'وصف القسم',
+        'meta_description' => 'وصف الميتا',
+        '%meta_description%' => 'وصف الميتا',
+        'meta_keywords' => 'كلمات البحث',
+        '%meta_keywords%' => 'كلمات البحث',
+        'country_id' => 'الدولة',
+        'parent_id' => 'القسم الرئيسي',
+        'image' => 'صورة القسم',
+    ],
+    'dialogs' => [
+        'delete' => [
+            'title' => 'تحذير !',
+            'info' => 'هل انت متأكد انك تريد حذف القسم ؟',
+            'confirm' => 'حذف',
+            'cancel' => 'الغاء',
+        ],
+    ],
+];

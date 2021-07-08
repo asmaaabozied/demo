@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_ar.css"> 
+  </head>
+  <body>  
+    <header class="innerHeader">
+      <div class="row">
+        <div class="headerMenu">
+          <div class="row">
+            <div class="col-md-9 pad0 leftNav">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="fit">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="search.html">Search</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="location.html">Location</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="myOrdrs.html">My orders</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="myOrdrs.html">Order status</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="dropdown show col-md-1 rightDrb">
+              <a class="btn dropdown-toggle" href="#" role="button" id="cartBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-cart-plus"></i>
+                <!-- <span>2</span>            -->
+              </a>
+              <div class="dropdown-menu" aria-labelledby="cartBtn">
+                <a class="dropdown-item" href="#">ActionActionAction</a>
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Action</a>
+              </div>
+            </div>
+            <div class="col-md-1 langDiv">
+              <a href="">AR</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+<section class="menuSec">
+  <div class="row">
+    <div class="col-lg-7 col-md-12 rWbg forMobOnly">
+      <div class="centerImg">
+        <img src="img/1.png" alt="" data-aos="fade-in"
+        data-aos-easing="linear"
+      data-aos-duration="700"> 
+      </div>
+    </div>
+    <div class="col-lg-5 col-md-12 cartPage cartBigDiv">
+      <div class="logTit">
+        <a href="" class="bk">
+          <i class="fas fa-chevron-circle-left"></i>
+        </a>
+        <h6>cart</h6>
+      </div>
+      <div class="cartItem col-12">
+        <table class="table table-hover table-responsive">
+          <tbody>
+            <tr>
+              <td width="20%">
+                <img src="img/chItm.png" alt="">
+              </td>
+              <td>
+              <span class="cartItmNa">Products </span>
+              </td>
+              <td><span class="bl">x</span></td>
+              <td class="itmDet">
+                <span>
+                  <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-number" data-type="minus" data-field="quant[2]">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[2]" class="form-control input-number" value="1" min="1" max="100">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-number" data-type="plus" data-field="quant[2]">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </span>
+                  </div>
+                </span>
+              </td>
+              <td>
+                <h5>4.000 <span>kwd</span></h5>
+              </td>
+            </tr>
+            <tr>
+              <td width="20%">
+              <img src="img/chItm.png" alt="">
+            </td>
+            <td>
+              <span class="cartItmNa">Products </span>
+            </td>
+            <td><span class="bl">x</span></td>
+            <td class="itmDet">
+              <span>
+                <div class="input-group">
+                  <span class="input-group-btn">
+                      <button type="button" class="btn btn-number" data-type="minus" data-field="quant[2]">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                  </span>
+                  <input type="text" name="quant[2]" class="form-control input-number" value="1" min="1" max="100">
+                  <span class="input-group-btn">
+                      <button type="button" class="btn btn-number" data-type="plus" data-field="quant[2]">
+                          <i class="fas fa-plus"></i>
+                      </button>
+                  </span>
+                </div>
+              </span>
+            </td>
+            <td>
+              <h5>4.000 <span>kwd</span></h5>
+            </td>
+            </tr>
+            <tr>
+              <td width="20%">
+              <img src="img/chItm.png" alt="">
+            </td>
+            <td>
+              <span class="cartItmNa">Products Products</span>
+            </td>
+            <td><span class="bl">x</span></td>
+            <td class="itmDet">
+              <span>
+                <div class="input-group">
+                  <span class="input-group-btn">
+                      <button type="button" class="btn btn-number" data-type="minus" data-field="quant[2]">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                  </span>
+                  <input type="text" name="quant[2]" class="form-control input-number" value="1" min="1" max="100">
+                  <span class="input-group-btn">
+                      <button type="button" class="btn btn-number" data-type="plus" data-field="quant[2]">
+                          <i class="fas fa-plus"></i>
+                      </button>
+                  </span>
+                </div>
+              </span>
+            </td>
+            <td>
+              <h5>4.000 <span>kwd</span></h5>
+            </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="clearfix"></div>
+          
+          <h5 class="cpTot">total : 9.000 kwd</h5>
+      </div>
+      <a href="checkout.html" class="basicBtn">Checkout</a>
+    </div>
+    <div class="col-lg-7 col-md-12 rWbg forDeskOnly">
+      <div class="centerImg">
+        <img src="img/1.png" alt="" data-aos="fade-in"
+        data-aos-easing="linear"
+      data-aos-duration="700"> 
+      </div>
+    </div>
+  </div>
+</section>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+
+    <script src="js/main.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,3428 @@
+@font-face {
+    font-family: 'VIPR';
+    src: url('../webfonts/VIPRawyBold-Bold.eot');
+    src: url('../webfonts/VIPRawyBold-Bold.eot') format('embedded-opentype'), url('../webfonts/VIPRawyBold-Bold.woff2') format('woff2'), url('../webfonts/VIPRawyBold-Bold.woff') format('woff'), url('../webfonts/VIPRawyBold-Bold.ttf') format('truetype'), url('../webfonts/VIPRawyBold-Bold.otf') format('otf');
+    font-weight: normal;
+    font-style: normal
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body {
+    font-family: 'VIPR';
+    overflow-x: hidden;
+    text-transform: capitalize;
+}
+
+a,
+a:hover {
+    transition: 0.3s all ease-in-out;
+    text-decoration: none;
+}
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+.padR0 {
+    padding-right: 0;
+}
+
+.padL0 {
+    padding-left: 0;
+}
+
+.pad0 {
+    padding: 0;
+}
+
+/* ---------------------------- */
+
+header {
+    background-color: transparent;
+    position: fixed;
+    z-index: 9;
+    right: 0;
+    float: right;
+    margin-left: auto;
+    -ms-flex: 0 0 57%;
+    flex: 0 0 57%;
+    max-width: 57%;
+    width: 57%;
+    padding-left: 40px;
+}
+header nav ul,
+header nav {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+header nav li {
+    width: fit-content;
+    display: inline-block;
+    margin: 0 0 0 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 0;
+}
+
+header nav li:first-child {
+    margin-left: 0;
+}
+
+header form {
+    width: 100%;
+    display: inline-block;
+}
+
+header form input {
+    width: 100%;
+    position: relative;
+    border-radius: 30px;
+    border: 0;
+    padding: 7px 10px;
+}
+
+header form i {
+    position: absolute;
+    right: 22px;
+    top: 10px;
+    z-index: 9;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+header .rightDrb {
+    position: relative;
+}
+
+header .rightDrb a {
+    padding: 0;
+    margin: auto;
+    display: block;
+    color: #fff;
+}
+header .rightDrb a:hover
+{
+    color: #fff;
+    /* for ar link */
+    color: #3F66B0;
+}
+header .rightDrb span {
+    position: absolute;
+    left: auto;
+    right: -10px;
+    top: 15px;
+    font-size: 15px;
+    font-family: arial;
+    margin-top: 4px;
+    color: #0353cc;
+    width: fit-content;
+}
+.rightDrb a
+{
+    font-size: 19px;
+    margin: 0;
+    display: inline-block;
+    padding: 0;
+    padding-top: 35px;
+    position: relative;
+    vertical-align: text-bottom;
+    margin-left: 10px;
+}
+a#lang {
+    padding-top: 8px;
+    font-size: 14px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #000;
+    padding: 5px 15px;
+    border-radius: 0 0 6px 6px;
+    padding-top: 35px;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover,
+li.nav-item.active .nav-link,
+.navbar-expand-lg .navbar-nav li.nav-item.active .nav-link {
+    color: #fff;
+    background-color: #0353cc;
+}
+
+.navbar-expand-lg {
+    padding: 0;
+}
+
+header .rightDrb-menu.show a {
+    padding: 5px 10px;
+    border-bottom: 1px solid #0453CE;
+    color: #0453CE;
+}
+header .rightDrb-menu.show a:hover
+{
+    color: #fff;
+}
+header a
+{
+    color: #000;
+}
+header .rightDrb-menu.show
+{
+    padding: 0;
+    width: fit-content;
+    min-width: fit-content;
+}
+header #cartDrop + .dropdown-menu.show
+{
+    left: auto;
+    right: 0;
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+    color: #0353cc;
+    background-color: #0453CE;
+}
+
+.MenuRow {
+    display: block;
+    border-left: 2px solid transparent;
+}
+.MenuRow:last-child {
+    margin-bottom: 0;
+}
+
+.foPrice {
+    color: #0453CE;
+    text-align: right;
+    padding: 3px 5px;
+    font-family: arial;
+    font-size: 19px;
+}
+
+.MenuRow img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.MenuRow span {
+    font-size: 19px;
+    /* margin-left: 5px; */
+}
+
+.MenuRow h6 {
+    font-size: 13px;
+    margin-top: 5px;
+    color: #9ea2a8;
+}
+
+.menuColTit {
+    padding: 10px;
+    box-shadow: 1px 3px 4px #ccc;
+    margin: 0px 0 5px;
+    width: 100%;
+    background-color: #0453CE;
+    text-align: center;
+}
+
+.menuSec .row {
+    margin: 0;
+    color: #0353cc;
+}
+
+/* .menuSec {color: #0353cc;} */
+
+body
+{
+    overflow-y: hidden;
+}
+.menuCol {
+    width: 100%;
+    transition: 0.3s all ease-in-out;
+    padding: 0 0 10px 0;
+    margin-bottom: 20px;
+}   
+.menuItms
+{
+    overflow-y: auto;
+}
+.menuCol a {
+    color: #0353cc;
+}
+
+.momiz {
+    background-color: #0453CE;
+    padding-top: 10px;
+    transition: 0.3s all ease-in-out;
+    box-shadow: 1px 3px 4px #ccc;
+}
+
+.momiz .menuColTit {
+    background-color: #0353cc;
+    transition: 0.3s all ease-in-out;
+    color: #0453CE;
+    width: fit-content;
+    margin: auto;
+    display: block;
+    float: none;
+    padding: 5px 40px;
+    box-shadow: rgb(191 158 14) 1px 3px 4px;
+}
+
+.momiz .foPrice {
+    background-color: #0353cc;
+    color: #0453CE;
+}
+
+.tbMenu h5 {
+    border-bottom: 1px solid #0453CE;
+    background-color: transparent;
+    box-shadow: 0 0 0;
+}
+
+.tbMenu {
+    border: 1px solid #0453CE;
+}
+
+.tbMenu .MenuRow {
+    border-bottom: 1px solid #0453CE;
+    width: 100%;
+}
+
+.tbMenu .MenuRow:last-child {
+    border: 0;
+}
+
+.rWbg {
+    /* background-image: url('../img/bgR.png'); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #fff;
+    padding: 0;
+}
+
+.centerImg {
+    margin: 0;
+    display: block;
+    float: none;
+    position: relative;
+}
+
+.centerImg img {
+    margin: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.forMobOnly{
+    display: none;
+}
+.forDeskOnly {
+    display: block;
+}
+.lefArr
+{
+    margin-right: 10px;
+}
+.lefArr svg {
+    margin-top: 5px;
+}
+/* ======================== home ================================ */
+.homeHeader {
+    background-color: #0353cc;
+}
+
+.homeHeader .navbar-expand-lg .navbar-nav .nav-link {
+    color: #000;
+}
+
+.homeHeader .navbar-light .navbar-nav .nav-link:focus,
+.homeHeader .navbar-light .navbar-nav .nav-link:hover {
+    color: #000;
+    background-color: #0453CE;
+}
+
+.homeheader .rightDrb span {
+    color: #000;
+}
+
+.scrolItem img {
+    width: 100%;
+    height: 240px;
+}
+
+.scrolItem h4 {
+    width: 100%;
+    padding: 10px;
+    background-color: #0453CE;
+    text-align: left;
+    font-size: 23px;
+    font-family: 'Roboto', sans-serif;
+    color: #1A161B;
+    font-weight: 100;
+}
+
+.scrolItems {
+    padding: 0 10px 0 0;
+    overflow-y: auto;
+}
+
+.scrolItem:hover {
+    transform: scale(0.9);
+    transition: 0.3s all ease-in-out;
+}
+
+.scrolItem {
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 0;
+    transition: 0.3s all ease-in-out;
+}
+
+/* ======================== detail page ================================ */
+
+.proDetailInner {
+    overflow-y: auto;
+    padding-bottom: 15px;
+}
+.proDetails
+{
+    padding: 0;
+}
+.choItm img {
+    width: 100%;
+    height: 380px;
+}
+
+.itmDet {
+    color: #0453CE;
+    background-color: #fff;
+    padding: 5px 15px;
+}
+
+.itmDet h5 {
+    font-size: 19px;
+    margin: 7px 0;
+    
+}
+
+.itmDet h4 {
+    font-size: 16px;
+    margin: 0;
+    color: #929292;
+}
+
+.spPrice {
+    float: right;
+    color: #0353cc;
+    font-size: 21px;
+    font-family: "roboto";
+    font-weight: 100;
+    margin-top: -3px;
+}
+
+.itmDet small {
+    /* font-weight: bolder; */
+    font-size: 22px;
+    /* font-family: 'VIPR'; */
+}
+.itmDet small a{
+    color: #0353cc;
+}
+.choItm
+{
+    margin-bottom: 10px;
+}
+.itmDet .input-group-btn button {
+    color: #fff;
+    vertical-align: middle;
+    padding: 2px 5px;
+    font-size: 11px;
+    border-radius: 0;
+    margin: 0;
+}
+.itmDet h4 span {
+    float: right;
+}  
+.itmDet .input-group-btn
+{
+    width: 40px;
+    height: 27px;
+    background-color: #0453CE;
+}
+.itmDet span .input-group
+{
+    border: 1px solid #0353cc;
+}
+
+.itmDet .input-group input {
+    background-color: transparent;
+    height: 100%;
+    border: 0;
+    vertical-align: middle;
+    font-family: "roboto";
+    width: 30px;
+    padding: 0 5px;
+    text-align: center;
+    color: #0353cc;
+}
+.itmLabl {
+    padding: 5px 15px;
+    background-color: #fff;
+    color: #fff;
+    text-align: left;
+}
+
+.itmLabl label {
+    font-size: 19px;
+    color: #0353cc;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.itmDet label {
+    display: flex;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+    font-family: "VIPR";
+    /* padding-left: 20px; */
+    border-bottom: #0453CE 1px solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.itmDet label:last-child
+{
+    border-bottom: 0;
+}
+
+.itmDet label h5 {
+    font-size: 18px;
+    display: inline-block;
+    min-width: 60px;
+}
+
+.itmDet label input {
+    position: absolute;
+    opacity: 0;
+}
+
+.itmDet label input:checked+span:before {
+    box-shadow: inset 0 0 0 0.23em #fff;
+    background-color: #0453CE;
+}
+
+.itmDet label span small,.itmLabl small {
+    font-size: 12px;
+    color: #818181  !important;
+    margin-left: 5px;
+    font-family: "roboto";
+    font-weight: 100;
+}
+
+.itmDet label span {
+    align-items: center;
+    border-radius: 99em;
+    transition: 0.25s ease;
+    float: left;
+    width: 100%;
+}
+
+.itmDet label span:before {
+    content: "";
+    background-color: transparent;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+    margin-right: 0.375em;
+    transition: 0.25s ease;
+    border: 2px solid #0353cc;
+    right: 0;
+    float: right;
+    margin-top: 8px;
+}
+.itmDet label span p
+{
+    float: right;
+    margin-right: 9px;
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-family: "roboto";
+}
+.itmDet textarea {
+    width: 100%;
+    /* background-color: #0453CE; */
+    border: 0;
+    /* border-bottom: 1px solid #3F66B0; */
+    /* margin-bottom: 10px; */
+}
+
+.proDetailInner form button {
+    background-color: #3F66B0;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    font-size: 23px;
+    font-family: "roboto";
+    font-weight: 100;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 3px solid #3F66B0;
+    transition: 0.3s all ease-in-out;
+}
+
+.proDetailInner form button:hover {
+    background-color: #0453CE;
+    color: #fff;
+    transition: 0.3s all ease-in-out;
+}
+
+/* ================================= search ================================= ====================================== */
+
+.searchBigDiv a {
+    color: #0353cc;
+}
+
+.searchBigDiv {
+    padding: 0 3%;
+    margin-top: 20px;
+}
+
+.searchBigDiv .MenuRow {
+    margin-bottom: 10px;
+    clear: both;
+    border-bottom: 1px solid #0353cc;
+    padding-bottom: 10px;
+}
+
+.searchBigDiv .MenuRow h6 p{
+    color: #818181;
+    width: 100%;
+    overflow:hidden;
+}
+.searchBigDiv .MenuRow:last-child {
+    border: 0;
+}
+
+/* ================================= login ================================= ====================================== */
+
+.basicBtn {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #3F66B0;
+    text-align: center;
+    color: #fff;
+    border: 0 ;
+    transition: 0.3s all ease-in-out;
+    padding: 10px;
+    display: block;
+}
+.basicBtn:hover
+{
+    /* background-color: #fff;
+    transition: 0.3s all ease-in-out; */
+    color: #fff;
+}
+.loginBigDiv form 
+{
+    padding-top: 20px;
+}
+.loginBigDiv form .basicBtn
+{
+    position: relative;
+    bottom: 0;
+}
+.loginBigDiv form a.forget
+{
+    float: right;
+    color: #0353cc;
+    font-size: 13px;
+    margin-top: 5px;
+}
+.loginBigDiv form input::placeholder{color: #0353cc;}
+.loginBigDiv form input{
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: #0353cc; 
+    width: 100%; 
+    border:1px solid #ccc;
+    font-family: "roboto";
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.loginBigDiv form.ordStat .basicBtn
+{
+    position: absolute;
+    bottom: 55px;
+}
+.loginBigDiv form.ordStat + footer {
+    /* bottom: -35px; */
+}
+.orDiv{
+    position: relative;
+}
+.orDiv span{
+    background-color: #fff;
+    color: #A1A1A1;
+    font-size: 13px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 15px;
+    width: fit-content;
+    margin: auto;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 10px;
+}
+.orDiv div{
+    color: transparent;
+    border-bottom: 1px solid #A1A1A1;
+    width: 100%;
+}
+.logWith {
+    text-align: center;
+    margin-top: 40px;
+}
+.logWith .aLogWiz
+{
+    border: 1px solid #0353cc;
+    clear: both;
+    width: 100%;
+    display: block;
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.aLogWiz a span{
+    margin-left: 15px;
+}
+.aLogWiz a 
+{
+    border: 0;
+    color: #0353cc;
+}
+.aLogWiz a div{
+    /* width: 37%; */
+    width: fit-content;
+    margin: auto;
+    display: block;
+    float: none;
+    border: 0;
+    text-align: left;
+    background-color: transparent;
+    font-size: 18px;
+}
+.aLogWiz a:hover{
+    background-color: #0353cc;
+    color: #fff;
+}
+.aLogWiz img {float: left;}
+form .dnt
+{
+    color: #B2B2B2;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+}
+form .dnt a
+{
+    color: #0353cc;
+}
+
+/* ================================= location ================================= ====================================== */
+.locBigDiv form,.deliveryDiv
+{
+    margin-top: 20px;
+}
+.locBigDiv .card button,
+.deliveryDiv .card a
+{
+    width: 100%;
+    text-align: left;
+    color: #fff;
+    padding: 10px;
+    background-color: #0453CE;
+    border: 0;
+    border-radius: 0;
+}
+.deliveryDiv .card {margin-bottom: 10px;}
+.deliveryDiv .card a:hover
+{
+    color: #0353cc;
+}
+.locBigDiv .card button i,
+.deliveryDiv .card a i
+{
+    float: right;
+transition: 0.3s all ease-in-out;
+color: #fff;
+}
+.locBigDiv .card button:not(.collapsed) i
+{
+transform: rotate(180deg);
+transition: 0.3s all ease-in-out;
+}
+.card a i
+{
+    transform: rotate(-90deg);
+
+}
+.locBigDiv .accordion>.card>.card-header,
+.locBigDiv .accordion>.card
+{
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+}
+.locBigDiv .accordion>.card
+{
+    margin-top: 10px;
+}
+.locBigDiv .accordion>.card iframe
+{
+margin:0;
+padding:0 0 9px 9px;
+}
+.locBigDiv .card-body{
+padding: 0;
+line-height: 0;
+}
+.btn-link:hover {
+    text-decoration: none;
+}
+/* .locBigDiv .card-body iframe{padding: 3px;} */
+.loca
+{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.loca i{
+    color: #0453CE;
+    font-size: 16px;
+}
+.loca span
+{
+    font-size: 15px;
+    color: #1A161B;
+    padding-left: 7px;
+    font-family: "roboto";
+}
+.locBigDiv .card-body label{
+    width: 100%;
+    margin:0;
+}
+.locBigDiv .card-body label input{
+    display: none;
+}
+.locBigDiv .card-body label input:checked+.row{
+    /* box-shadow: inset 0 0 0 0.23em #0453CE; */
+}
+.locBigDiv .card-body label .row{
+    padding: 10px 0 0;
+}
+
+.del{
+    text-align: center;
+    color: #0353cc;
+    font-size: 25px;
+}
+.del a{
+    float: right;
+    color: #0353cc;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* ================================= cart ================================= ====================================== */
+.cartItem,.cartTot
+{
+    /* background-color: #0453CE; */
+    color: #0353cc;
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid #0353cc;
+    
+}
+.cartItem
+{
+    padding: 15px;;
+}
+.cartItem .addToCart:hover
+{
+    color: #fff;
+}
+.cartItem .addToCart
+{
+    float: right;
+    /* margin-right: 20px; */
+    /* margin-left: 20px; */
+    background-color: #3F66B0;
+}
+.addToCart:hover
+{
+    color: #fff;
+}
+.cartTot h5{
+    color: #1A161B;
+}
+.cartTot a{
+    color: #0353cc;
+    float: right;
+}
+.cartBigDiv .basicBtn,
+.addressDiv .basicBtn,
+.pickDiv .basicBtn
+{
+    /* position: absolute; */
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    
+    text-align: center;
+}
+.cartBigDiv.noScrll
+{
+    height: auto !important;
+    overflow: hidden;
+}
+.pickDiv .basicBtn
+{
+    bottom: 55px;
+}
+.basicBtn
+{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    width: 96%;
+    margin: 20px auto 5px;
+    border-radius: 5px;
+}
+.cartItem:last-child,.cartTot,
+.cartItem:nth-last-child(2)
+{
+    border-bottom: 0;
+}
+
+.cartItem:hover{color: #0353cc;}
+
+.cartBigDiv form,.wasForm
+{
+    border-radius: 5px;
+    border: 1px solid #0353cc;
+    padding:  0px;
+    width: 97%;
+    margin: 10px auto;
+    display: block;
+    margin-top: 25px;
+}
+.scrollDiv
+{
+    overflow-y: auto;
+}
+.cartItem img
+{
+    width: 90px;
+    height: 70px;
+    font-size: 17px;
+    float: left;
+    /* margin-right: 20px; */
+}
+.tblDesc
+{
+    font-size: 13px;
+    color: #9e9e9e;
+}
+.cartItem table .qtyItms
+{
+
+    background-color: #0353cc;
+    color: #fff;
+    padding: 0px 19px;
+    font-size: 20px;
+}
+.cartItem table tr
+{
+    /* display: block; */
+}
+.cartBigDiv h5
+{
+    float: left;
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;;
+}
+.cartBigDiv .cartItem h5
+{
+    font-family: "roboto";
+    width: fit-content;
+    text-transform: uppercase;
+    margin: 0;
+    color: #0353cc;
+}
+.cartBigDiv .cartItem .table td, .cartBigDiv .cartItem .table th {
+    vertical-align: middle;
+    border-top: 0;
+}
+.cartBigDiv .cartItem .table tr
+{
+    border-bottom: 1px solid #4066b0;
+    /* display: block; */
+}
+.cartBigDiv .cartItem .table tr:first-child
+{
+    border-bottom: 0;
+    color: #0353cc;
+    font-weight: 100;
+}
+.cartPage .cartItem .table tr:last-child
+{
+    border-bottom: 0 solid #4066b0;
+}
+.cartItmNa
+{
+    max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  font-size: 14px;
+}
+.cartItmNa a
+{
+    color: #5EBA24;
+    font-size: 12px;
+}
+.cartItem span
+{
+    font-size: 17px;
+}
+
+.cartItem .bl
+{
+    color: #1A161B;
+    padding-left: 5px;
+}
+
+.cartItem .input-group
+{
+    width: fit-content;
+    display: inline-flex;
+}
+.cartItem .input-group input
+{
+    background-color: transparent;
+    color: #0353cc;
+    border:1px solid #fff;
+    font-family: "roboto";
+    width: 40px;
+    padding: 0 5px;
+    height: 32px;
+    margin:0 10px;
+    text-align: center;
+    border-radius: 0;
+}
+.cartItem table
+{
+    width: 100%;
+    font-family: "roboto";
+    margin-bottom: 0;
+}
+table tbody
+{
+    display: block;
+}
+.cartItem span.input-group-btn
+{
+    margin:5px;
+}
+.cartPage .cartItem h5.cpTot
+{
+    color: #0353cc;
+    padding: 0;
+    text-align: right;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.cartPage .cartItem span.input-group-btn,
+.cartPage .cartItem .input-group
+{
+    margin: 0;
+}
+.cartPage .cartItem .btn-number
+{
+    float: none;
+    border: 0;
+    margin: auto;
+    display: block;
+    line-height: 2;
+}
+td.itmDet
+{
+    background-color: transparent;
+}
+.cartItem td
+{
+    vertical-align: middle;
+    color: #0353cc
+}
+.cartPage .cartItem
+{
+    border: 1px solid #0353cc;
+    padding: 0 10px;
+    border-radius: 5px;
+    width: 96%;
+    margin: 10px auto;
+    display: block;
+    margin-top: 7%;
+}
+.cartPage .itmDet .input-group-btn
+{
+    height: auto;
+}
+.cartPage .cartItem .input-group input
+{
+    width: 22px;
+    height: 24px;
+}
+.cartPage .cartItem img {
+    width: 70px;
+    height: 60px;
+    border-radius: 5px;
+}
+.cartItem .btn-number
+{
+    border-radius: 50%;
+    border:2px solid #fff;
+    color: #fff;
+    float: right;
+    height: 20px;
+    font-weight: 100;
+    font-size: 11px;
+    width: 20px;
+    line-height: 20px;
+    padding: 0;
+}
+.cartBigDiv h5,
+.cartItem .input-group,
+.cartItem .cartItmNa
+{
+margin-top: 5px;
+}
+.cartBigDiv h5  /* cart page */
+{
+    margin-top: 40px;
+}
+.cartTot h5
+{
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.rTot
+{
+    float: right;
+    width: 30%;
+    text-align: right;
+    color: #0353cc;
+}
+.rTot table
+{
+    float: right;
+    margin-bottom: 30px;
+}
+.rTot table tr:last-child
+{
+    border-top: 1px solid #0353cc;
+}
+.rTot tr td:last-child
+{
+    /* color: #fff; */
+    padding: 5px 10px;
+    font-family: 'roboto';
+}
+.rTot tr td:first-child
+{
+    /* color: #fff; */
+    font-size: 15px;
+    padding: 5px 10px;
+}
+.rTot tr td:first-child
+{
+    color: #0353cc;
+}
+p.delete+form .btn {
+    color: #0353cc;
+}
+.cartBigDiv h5.adDetails{margin-top: 30px;}
+/* address */
+.addressDiv form input
+{
+    font-family: "roboto";
+}
+.addressDiv form input::placeholder
+{
+    color: #A1A1A1;
+}
+.addressDiv h5.del,.pickDiv h5.del
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.pickDiv .itmDet label
+{
+    margin:0
+}
+.pickDiv .itmDet label span
+{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.pickDiv .itmDet h5{
+    margin: 0;
+}
+.pickDiv .itmDet 
+{
+    padding: 0px 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 0;
+    color: #ffffff;
+    background-color: #0254cd;
+}
+.pickDiv form
+{
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.pickDiv .itmDet label input:checked+span:before
+{
+    box-shadow: inset 0 0 0 0.23em #0254ce;
+    background-color: #ffffff;
+}
+.pickDiv .itmDet label span::before
+{
+    margin-top: 3px;
+    border-color: #fff;
+}
+.checkBtnDiv
+{
+    width: 100%;
+    margin-top: 30px;
+}
+.checkBtnDiv .btn
+{
+    background-color: #0453CE;
+    float: right;
+    padding: 10px;
+    color: #0353cc;
+    text-align: center;
+    width: 28%;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 0;
+    
+}
+.checkBtnDiv input
+{
+    width: 70%;
+    display: inline-block;
+    border:1px solid #0353cc;
+    display: flex;
+    padding: 5px 10px;
+    float: left;
+}
+.checkBtnDiv .btn,
+.checkBtnDiv input
+{
+height: 38px;
+}
+.chkOt
+{
+    overflow-y: auto;
+    padding-bottom: 20px;
+}
+.cartBigDiv.chkOt .basicBtn
+{
+position: relative;
+width: 100%;
+margin-top: 40px;
+}
+.chkOt .itmDet
+{
+    background-color: #fff;
+    box-shadow: 0 0 0;
+    text-align: center;
+    margin-bottom: 0;
+}
+.chkOt h5{
+    margin-bottom: 25px;
+}
+.chkOt label
+{
+    width: 40%;
+    border: 1px solid #0353cc;
+    padding: 20px;
+    margin: 15px;
+    display: inline-block;
+    text-align: center;
+    color: #1A161B;
+    height: 170px;
+}
+.chkOt label img
+{
+    margin:10px auto
+}
+.chkOt .itmDet label span::before
+{
+    content: none;
+}
+.chkOt .itmDet label span::before
+{
+    content: "";
+    background-color: transparent;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+    display: block;
+    transition: 0.25s ease;
+    border: 2px solid #0353cc;
+    margin:10px auto;
+    float: none;
+}
+.chkOt .itmDet label input:checked+span:before {
+    box-shadow: inset 0 0 0 0.23em #0353cc;
+    background-color: #0453CE;
+}
+.chkOt label:last-child img
+{
+    margin-bottom: 0;
+}
+
+/* --- checkout final ----- */
+
+.chkFinl form
+{
+    padding-top: 3%;
+    overflow-y: auto;
+}
+.chkFinl footer , .proDetails footer,.receiptPage footer
+{
+    position: unset;
+}
+.chkFinl , .proDetails
+{
+    /* padding-bottom: 20px; */
+}
+.chkFinl
+{
+    overflow-y: auto;
+}
+.ordDetails {
+    color: #fff;
+}
+.chkFinl h4,.Ctitle
+{
+    text-align: left;
+    font-size: 23px;
+    margin-bottom: 5px;
+    color: #3F66B0;
+}
+.chkFinl h4
+{
+    padding: 0 15px;
+}
+.chkFinl input,
+.chkFinl select,.fiOrder
+{
+    border-radius: 6px;
+    font-size: 18px;
+    color: #5A5B5E;
+    padding: 8px 20px;
+    margin-top: 10px;
+    border: 1px solid #0353cc;
+    width: 100%;
+}
+.chkFinl input::placeholder,
+.chkFinl select 
+{
+    color: #0353cc;
+}
+.chkFinl select
+{
+    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
+    -webkit-appearance: none;
+    /* content: "\f078"; */
+    background-position-x: 96%;
+    cursor: pointer;
+}
+.chRow1
+{
+    margin-bottom: 22px;
+    padding: 10px 15px;
+}
+.chRow2 input,
+.chRow2 select
+{
+    /* width: 48%; */
+    margin-top: 20px;
+}
+.chRow1 small button{
+    font-weight: bolder;
+    padding: 0;
+    color: #0353cc;
+}
+.chRow1 small
+{
+    padding-left: 10px;
+    font-size: 12px;color: #818181
+}
+.chRow1 h4
+{
+    padding: 0;
+}
+.ordDetails,.payMethod
+{
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+.ordrDtls
+{
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-family: "roboto";
+    /* color: #fff; */
+}
+.ordrDtls .cartItem 
+{
+    padding: 0;
+    border: 0;
+    /* color: #fff; */
+}
+.ordrDtls .cartItem table {
+    width: 100%;
+    /* background-color: #0254cd; */
+    border-radius: 6px;
+    /* color: #fff; */
+}
+.ordrDtls .cartItem .bl,
+.ordrDtls .table-hover tbody tr:hover
+{
+    /* color: #fff; */
+}
+.ordrDtls .cartItem table tr:nth-last-child(3) td,
+.ordrDtls .cartItem table tr:nth-last-child(2) td
+{
+    border-top: 0;
+}
+.ordrDtls .cartItem img {
+    width: 75px;
+    height: 65px;
+    /* margin: 0; */
+}
+.ordrDtls table .qtyItms
+{
+    padding: 0px 13px;
+    border: 1px solid #fff;
+    border: 1px solid #0353cc;
+}
+.ordrDtls td
+{
+    vertical-align: middle;
+    border-top: 1px solid #dee2e67a;
+    /* color: #fff; */
+}
+.ordrDtls .rTot tr td:first-child
+{
+    color: #0353cc;
+}
+.subs input
+{
+    margin-bottom: 16px;
+    color: #fff;
+}
+.ordDetails,.subs input
+/* ,.payMethod */
+{
+    border-radius: 6px;
+    background-color: #0453CE;
+    padding: 15px;
+    border:0
+}
+.subs input::placeholder
+{
+    color: #fff;
+}
+.subs span{
+    position: absolute;
+    right: 30px;
+    top: 23px;
+}
+.perfSerch input::placeholder
+{
+    color: #0353cc;
+}
+.perfSerch input
+{
+    width: 100%;
+    padding: 5px 10px;
+    margin-bottom: 5%;
+    border: #0353cc 1px solid;
+    color: #0353cc;
+    border-radius: 3px;
+    margin-top: 4%;
+    position: relative;
+}
+.perfSerch i {
+    position: absolute;
+    right: 30px;
+    top: 33px;
+}
+.payMethod label{
+    cursor: pointer;
+    width: 100%;
+    border-bottom: 1px solid #0353cc;
+    /* color: #fff; */
+    padding: 10px 15px;
+}
+.payMethod label:last-child
+{
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+.cartBigDiv {
+    overflow-y: auto;
+    height: 100%;
+}
+.payMethod input
+{
+    float: left;
+    width: fit-content;
+    margin: 5px;
+    padding: 10px 15px;
+}
+.payMethod
+{
+    padding: 15px 0;
+    color: #1A161B;
+    border: 1px solid #0254cd;
+    border-radius: 6px;
+}
+.singleMethod img
+{
+    float: right;
+}
+.fiOrder
+{
+    color: #fff;
+    background-color: #3F66B0;
+}
+.fiOrder:hover
+{
+    color: #fff;
+}
+.ordDetails table 
+{
+    width: 100%;
+}
+.ordDetails table tr td span{font-weight: bolder;}
+.ordDetails table tr td:last-child
+{text-align: right;color: #fff;font-family: "roboto";}
+.ordDetails table tr:last-child
+{
+    border-top: 1px solid #0353cc;
+}
+
+/* ================================= scroll ================================= ====================================== */
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+.menuCol::-webkit-scrollbar {
+    width: 1px;
+}
+.ordAg:hover
+{
+    color: #fff
+}
+.ordAg
+{
+    border-radius: 30px;
+    color: #fff;
+    background-color: #0353cc;
+    padding: 2px 15px;
+    text-align: center;
+    margin-left: 5px;
+    float: right;   
+    margin-top: 10px
+}
+.cartItem+hr
+{
+    width: 100%;
+    display: block;
+    clear: both;
+    border-color: #0353cc;
+}
+.cartBigDiv .cartItem .prANord h5
+{
+    float: left;
+}
+/* sideNav */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #0453CE;
+    overflow-x: hidden;
+    padding: 10px;
+    transition: 0.5s;
+    padding-top: 25px;
+    text-align:center;
+  }
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .newMenu .card-header .btn,.card-header {
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    width: 100%;
+    background-color: #0453CE;
+    border-radius: 6px !important;
+    font-family: "arial";
+  }
+  
+  .newMenu .card-header .btn:hover{
+    color: #fff;
+    background-color: #0353cc;
+  }
+  .newMenu .card-body {
+    padding:0;
+    }
+  .newMenu .card.card-body {
+    background-color: #0353cc;
+    border: 0;
+    border-radius: 0;
+    color: #fff;
+    }
+  .newMenu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .newMenu span,a.closebtn
+  {
+      color: #0353cc;
+      cursor: pointer;
+  }
+  .newMenu .card
+  {
+    border:0
+  }
+  .newMenu .btn
+  {
+      text-align: left;
+  }
+  .newMenu .btn i
+  {
+      float: right;
+      color: #fff;
+      padding-top: 5px;
+      font-size: 17px;
+  }
+  .newMenu .card-body ul
+  {
+      margin-bottom: 0;
+      padding: 0;
+  }
+  .newMenu .card-body ul li
+  {
+      padding: 10px 0;
+    border-bottom: 1px solid #0353cc;
+  }
+  .newMenu .card
+  {
+      margin-bottom: 2px;
+  }
+  .newMenu .card-body ul li:hover
+  {
+      background-color: #bedffa;
+      /* color: #fff; */
+  }
+  #addToCartModal .modal-footer button.btn.btn-secondary
+  {
+      float: left;
+      margin-right: auto;
+  }
+  a.closebtn
+  {
+      display: block;
+      text-align: right;
+      font-size: 30px;
+  }
+  .headerMenu
+  {
+      width: 100%;
+  }
+  .rightDrb i
+  {
+      font-size: 23px;
+      color: #0353cc;
+  }
+  .priDiv
+  {
+      float: right;
+      margin-left: auto;
+  }
+   .addToCart
+  {
+      border-radius: 5px;
+      background-color: #3F66B0;
+      color: #fff;
+      text-align: center;
+      padding: 2px 14px;
+      margin-top: 5px;
+      text-transform: capitalize;
+      clear: both;
+      display: block;
+  }
+  div#accordion {
+    padding: 10px;
+    background-color: #fff;
+    padding-top: 0;
+}
+.pi_di
+{
+    width: 100%;
+    position: unset;
+    background-color: #fff;
+    padding: 0 10px;
+}
+.pi_di .piBtn
+{
+    float: right;
+    margin-left: auto;
+}
+.pi_di .btn
+{
+    color: #0353cc;
+    margin: auto;
+    border:1px solid #0353cc;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 8px;
+    margin-top: 10px;
+    width: 48%;
+}
+.pi_di .btn.active,
+.pi_di .btn .active,
+.pi_di .btn:hover
+{
+    background-color: #3F66B0;
+    color: #fff;
+}
+
+.pi_di i
+{
+    position: absolute;
+    right: 19px;
+    top: 15px;
+}
+.pi_di form
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    color: #0353cc;
+}
+.pi_di input
+{
+    width: 100%;
+    position: relative;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #0353cc;
+    border-radius: 6px;
+}
+header .headerMenu a ,.langDiv{
+    color: #000;
+    padding-top: 35px;
+    font-size: 20px;
+}
+.centerImg img
+{
+    margin-top: 30%;
+    transform: scale(0.7) !important;
+}
+.wzBord
+{
+    border: 1px solid #0353cc;
+    border-radius: 6px;
+    padding:0 10px;
+    width: 96%;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.proDetailInner .subBtn
+{
+    left: 0;
+    right: 0;
+    width: 96%;
+    margin: auto;
+    margin-top: 20px;
+    /* position: absolute; */
+    /* bottom: 30px; */
+    display: block;
+}
+.bk i
+{
+    font-size: 33px;
+    color: #0353cc;
+}
+.logTit
+{
+    width: 50%;
+    padding-top: 20px;
+    text-align: right;
+    color: #0353cc;
+    display: inline-flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.logTit h6
+{
+    text-align: right;
+    float: right;
+    margin-left: auto;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.profileDiv a.itmDet i
+{
+    float: right;
+    margin-top: 3px;
+}
+.profileDiv .basicBtn
+{
+    bottom: 0;
+}
+.profileDiv a.itmDet
+{
+    width: 100%;
+    padding: 7px 15px;
+    background-color: #0353cc;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 2%;
+    display: block;
+    clear: both;
+    border-radius: 3px;
+}
+.profileDiv .logTit
+{
+    margin-bottom: 8%;
+}
+.profileDiv form 
+{
+    margin-top: 6%;
+}
+.profileDiv form input
+{
+    width: 100%;
+    margin-bottom: 10px;
+    border:1px solid #0353cc;
+    border-radius: 5px;
+    padding: 10px;
+}
+.printBtns
+{
+    display: block;
+    clear: both;
+    width: fit-content;
+    margin-top: 3%;
+    float: right;
+    margin-left: auto;
+}
+.printBtns .btn
+{
+    background-color: #eee;
+    color: #000;
+    float: right;
+    border-radius: 0;
+    margin-left: 10px;
+    padding: 5px 40px;
+}
+.receiptPage
+{
+    /* overflow-y: auto; */
+    padding-bottom: 20px;
+}
+.receiptPage .logTit
+{
+    width: 100%;
+}
+.receiptPage .myRow
+{
+    border:1px solid #0353cc;
+    padding: 10px;
+    margin-top: 30px;
+    font-family: "roboto";
+    overflow-y: auto;
+    /* padding-bottom: 20px; */
+    overflow-x: hidden;
+    margin-bottom: 20px;
+}
+h6.adDetails
+{
+    font-size: 18px;
+    display: inline-block;
+    margin-left: 24%;
+    color: #3F66B0;
+}
+h5.adDetails
+{
+    
+    font-size: 18px;
+    display: inline-block;
+    color: #3F66B0;
+}
+h4.adDetails
+{
+    display: block;
+    clear: both;
+    margin-left: 0;
+    margin-right: auto;
+    font-size: 18px;
+    color: #3F66B0;
+}
+.adDetails+.cartTot
+{
+    border: 1px solid #3F66B0;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+.pAg
+{
+    background-color: #0353cc !important;
+    color: #fff !important;
+}
+.ordStat 
+{
+    margin-top: 4%;
+}
+.ordStat input
+{
+    border:1px solid #0353cc;
+}
+.ordStat label
+{
+    color: #0353cc;
+    text-align: left;
+    font-size: 17px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+.ordStatBtn:hover
+{
+    color: #fff;
+}
+.ordStatBtn
+{
+    background-color: #0353cc;
+    color: #fff;
+    text-align: center;
+    width: 96%;
+    margin: 0 auto;
+    border-radius: 6px;
+    padding: 10px;
+}
+header .rightDrb-menu.show
+{
+    right: 0 !important;
+    margin-top: -2px;
+}
+.rightDrb, .langDiv
+{
+    font-size: 15px;
+}
+.rightDrb .dropdown ,.rightDrb .langDiv
+{
+    margin: 0 5px;
+}
+.dropdown-menu.show 
+{
+    padding: 0px;
+}
+.dropdown-menu.show a
+{
+    padding: 5px;
+    font-size: 17px;
+}
+.dropdown-menu.show a:hover
+{
+    color: #fff;
+}
+  .rightDrb .langDiv
+  {
+      color: #0353cc;
+  }
+    a.closebtn
+  {
+      display: block;
+      text-align: right;
+      font-size: 30px;
+  }
+  .menuBigDiv,.loginBigDiv
+  {
+      overflow-y: auto;
+      padding-bottom: 60px;
+  }
+  footer
+  {
+    position: absolute;
+    bottom: -55px;
+    width: 100%;
+    right:0;
+    left:0;
+    /* .loginBigDiv form  */
+    bottom: 20px;
+}
+  .noAbsol footer
+  {
+      position:relative;
+  }
+  .rights {
+    text-align: center;
+    color: #000;
+    font-size: 17px;
+    }
+    .rights img {
+        width: 45px;
+        padding: 0 10px;
+        margin-top: -5px;
+    }
+    .rights span
+    {
+        color: #0353cc;
+        float: left;
+        margin-right: 10px;
+    }
+    footer .rights div
+    {
+        width: fit-content;
+        margin: auto;
+    }
+    .wilShow
+    {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;  
+    padding-top: 50px;  
+    z-index: 99;
+    overflow-y: auto;
+}
+.wilShow .card-header,.wilShow .card-header .btn
+{
+    padding: 0 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    display: block;
+    clear: both;
+}
+.card-close
+{
+    border: 0;
+    background-color: transparent;
+    float: right;
+    font-size: 25px;
+    color: #0353cc;
+    padding: 10px;
+    position: absolute;
+    right: 4px;
+    top: 0;
+    z-index: 999;
+}
+.card-header .btn small
+{
+    font-size: 13px;
+    color: #ccc;
+}
+.newMenu .card-header
+{
+    margin-bottom: 10px;
+    padding: 0;
+}
+.leftNav {
+    /* padding-left: 5%; */
+}
+div#btnContainer .btn {
+    color: #7b7c80;
+    font-size: 23px;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+div#btnContainer .btn.active {
+    color: #0453ce;
+}
+.newMenu .gridViewMode .card-body ul li.column
+{
+    width: 33.33%;
+    width: 32%;
+    display: inline-block;
+    padding: 10px 5px;
+    border-bottom: 0;
+}
+
+.newMenu .gridViewMode .MenuRow .row a
+{
+    margin: auto;
+}
+.newMenu .gridViewMode  button.btn.addToCart
+{
+    margin: 0;
+}
+.newMenu .gridViewMode .card-body ul li.column .MenuRow .row div
+{
+    width: 100%;
+}
+.gridViewMode .column .MenuRow img
+{
+    width: 100px;
+    margin: 0;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.newMenu .card-body ul li i
+{
+    transform: rotate(0);
+    font-size: 26px;
+    vertical-align: middle;
+    color: #0353cc;
+}
+.newMenu button.btn.addToCart {
+    display: inline-block;
+    margin-left: 5px;
+}
+.gridViewMode .MenuRow
+{
+    position: relative;
+}
+.card-header ,
+.card-header .btn
+{
+    border: 0;
+}
+.newMenu .gridView.active button.btn.addToCart {
+display: block;
+width: 100%;
+margin: 0;
+margin-top: 12px;
+text-align: center;
+font-size: 16px;
+/* padding-bottom: 13px; */
+}
+.gridViewMode .MenuRow h6
+{
+    display: none;
+}
+.newMenu .gridViewMode .card-body ul li i
+{
+    position: absolute;
+    color: #0353cc;
+    top: 10px;
+    right: 10px;
+}
+.newMenu .gridViewMode span,
+.newMenu .gridViewMode .foPrice
+{
+    font-size: 15px;
+}
+.newMenu .gridViewMode .card-body ul li.column .MenuRow .row div.foPrice
+{
+    width: fit-content;
+    display: inline-block;
+    float: right;
+    margin-top: -25px;
+}
+.forGrid
+{
+    display: none;
+    width: fit-content;
+    color: #fff;
+    float: right;
+}
+.forGrid a
+{
+    color: #fff;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 19px;
+    margin-right: 10px;
+    text-transform: capitalize;
+}
+.gridView.active .btn.btn-link i
+{
+    display: none;
+    padding-top: 10px;
+    font-size: 18px;
+}
+.gridView.active .forGrid,
+.gridView.active  .btn.btn-link .forGrid i
+{
+    display: block;
+}
+.homeGrid form.perfSerch {
+    width: 92%;
+}
+.homeGrid
+{
+    padding: 32px;
+}
+.homeGrid form input
+{
+    margin-top: 0;
+    margin-left: 20px;
+}
+.homeGrid .perfSerch i {
+    right: 40px;
+    top: 40px;
+}
+.homeGrid .card-header .btn,.homeGrid .card-header,
+.homeGrid .card-header .btn:hover
+{
+    background-color: #fff;
+    color: #3F66B0;
+}
+.homeGrid .btn.addToCart
+{
+    width: 100%;
+    text-align: center;
+}
+.gridViewMode .card-body ul
+{
+    white-space: nowrap;
+    overflow-x: auto;
+    /* margin-bottom: -18px;scrollbar-width: none; */
+}
+.gridViewMode .card-body:after {
+    content: "";
+    border-bottom: 20px solid transparent;
+    height: 20px;
+    width: 100%;
+    bottom: -15px;
+    display: block;
+    position: absolute;
+}
+.homeGrid .gridViewMode .card-body 
+{
+    overflow-y: auto;
+}
+.homeGrid .gridViewMode .card-body ul::-webkit-scrollbar
+{
+    background-color: #fff;
+}
+.homeGrid .gridViewMode ul
+{
+    white-space: initial;
+}
+li.nav-item.btn
+{
+    padding: 0;
+}
+ul.pi_di
+{
+    margin-top: 22px;
+}
+.chRow1 .nav-pills .nav-link:hover,
+.chRow1 .nav-pills .nav-link {
+    color: #4066b0;
+    background-color: #fff;
+}
+.chRow1 .nav-pills .nav-link.active:hover,
+.chRow1 .nav-pills .nav-link.active 
+{
+    color: #fff;
+    background-color: #3F66B0;
+}
+#p-saved .itmDet
+{
+    background-color: #3F66B0;
+    color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+#p-saved .itmDet label span:before
+{
+    border-color: #fff;
+    cursor: pointer;
+}
+.newAdPage .chRow2
+{
+    overflow-x: auto;
+}
+.wi4list .cartItem .table tr
+{
+    border-bottom: 0;
+}
+.wi4list +.addToCart
+{
+    margin-left: auto;
+    margin-right: 20px;
+}
+.wasForm.wi4list
+{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.itemEditable
+{
+    margin-top: 25px;
+}
+.itemEditable p
+{
+    width: 80%;
+    display: inline-block;
+    background-color: #3F66B0;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+.itemEditable .btn
+{
+    font-size: 19px;
+    padding: 0;
+    color: #3F66B0;
+    border:1px solid #3F66B0;
+    border-radius: 40px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+.profHead img,
+.profHead i
+{
+    border-radius: 40px;
+    border: 1px solid #0353cc;
+    font-size: 20px;
+    padding: 5px;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url('../img/imgIcon.png');
+    background-size: 100%;
+}
+.mobNav {
+    display: none;
+}
+.mobNav .btn
+{
+    float: right;
+    margin-left: auto;
+    color: gray;
+    font-size: 18px;
+    padding: 10px 0;
+}
+.mobNav .row
+{
+    margin: 0;
+    padding: 0 10px;
+}
+.mobNav img
+{
+    width: 20px;
+    height: 15px;
+    margin-right: 5px;
+}
+.mobNav a
+{
+    padding-top: 10px;
+    color: #adb5bd;
+}
+.mobNav ul.navbar-nav li
+{
+    padding: 0 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+header a#profile
+{
+    padding-top: 32px;
+}
+.newMenu .card-header .btn h4
+{
+    display: inline-block;
+}
+/* ================================= responsive ================================= ====================================== */
+@media only screen and (max-width:1440px)
+{
+    .rTot{width: 40%;}
+    .leftNav {
+        padding-left: 0;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link,.rightDrb a {
+        padding: 30px 7px 0;
+    }
+}
+@media only screen and (max-width:1024px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-size: 12px;
+        padding: 5px 7px;
+    }
+    header .rightDrb span
+    {
+        font-size: 12px;
+    }
+    .newMenu .gridViewMode .card-body ul li.column
+    {
+        width: 32% !important;
+    }
+    .cartItem img {
+        width: 70px;
+        height: 55px;
+        margin: 0;
+    }
+    .cartItem td
+    {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .cartItem table .qtyItms {
+        padding: 0px 10px;
+        font-size: 16px;
+    }
+    .cartItem td h5
+    {
+        font-size: 15px;
+    }
+    .cartBigDiv .basicBtn,
+    .addressDiv .basicBtn,
+    .pickDiv .basicBtn, .basicBtn
+    {
+        /* position: unset; */
+        width: 100%;
+        display: block;
+    }
+    .pickDiv .basicBtn,.profileDiv .basicBtn
+    {
+        position: unset;
+    }
+    .noArr .row
+    {
+        margin: 0;
+    }
+    .choItm img
+    {
+        height: 280px;
+    }
+    span.foPrice
+    {
+        /* width: 60%; */
+        margin: 5px auto;
+        display: block;
+        float: none;
+        margin-left: auto;
+    }
+    .rTot{width: 50%;}
+
+    .scrolItem img {
+        height: 200px;
+    }
+    .chkOt label
+    {
+        width: 46%;
+        margin: 5px;
+        height: 140px;
+        padding: 10px;
+    }
+    .chkOt .itmDet
+    {
+        padding: 15px 0;
+        width: 100%;
+    }
+    header .rightDrb
+    {
+        float: left;
+        margin-left: auto !important;
+        padding-right: 15px;
+    }
+    header .headerMenu a, .langDiv,.leftNav
+    {
+        padding-top: 25px;
+    }
+    header
+    {
+        padding-left: 10px;
+    }
+    .rightDrb i{
+        font-size: 17px;
+        /* margin-left: 5px;
+        margin-right: 5px; */
+    }header a#profile {
+        padding-top: 26px;
+    }
+    .rightDrb a.langDiv
+    {
+        font-size: 16px;
+        margin-top: 4px;
+        margin-right: 10px;
+    }
+    .rightDrb .dropdown, .rightDrb .langDiv {
+        margin: 0 3px;
+    }
+    .profHead img, .profHead i
+    {
+        font-size: 15px;
+        padding: 3px;
+    }
+    header .rightDrb span
+    {
+        right: -5px;
+    }
+    header .headerMenu .langDiv a
+    {
+        font-size: 18px;
+        padding-right: 10px;
+        padding-top: 0 !important   ;
+        float: right;
+    }
+    .rightDrb a
+    {
+        margin:0
+    }
+}
+@media only screen and (max-width:991px) {
+
+    div#accordion
+    {
+        padding: 0;
+    }
+    div#btnContainer {
+        clear: both;
+        display: flow-root;
+    }
+    div#btnContainer .btn
+    {
+        float: right;
+    }
+    .mobNav {
+        display: block;
+    }
+    .rightDrb
+    {
+        padding-right: 10px;
+    }
+    .forMobOnly footer,.rightDrb .langDiv
+    {
+        display: none;
+    }
+    footer
+    {
+        margin-top: 20px;
+    }
+    .forMobOnly form.perfSerch {
+        width: 40%;
+        position: relative;
+        margin: 12px auto;
+        z-index: 9;
+    }
+    .forMobOnly form.perfSerch i {
+        right: 15px;
+        top: 23px;
+    }
+    .pi_di form
+    {
+        display: none;
+    }
+    .menuBigDiv .pi_di
+    {
+        display: none;
+    }
+    .mobNav .pi_di .btn {
+        margin: 5px auto;
+        border: 1px solid #0353cc;
+        float: none;
+        padding: 2px;
+        color: #0353cc;
+    }
+    .mobNav .pi_di
+    {
+        display: block;
+        margin-top: 20px;
+    }
+    .centerImg img
+    {
+    margin: 15% auto;
+    }
+    header
+    {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 10px;
+        position: absolute;
+    }
+    .langDiv {
+        display: inline-block;
+        width: fit-content;
+        margin-left: 20px;
+        margin-top: 4px;
+        margin-right: 20px;
+    }
+    span.foPrice
+    {
+        /* width: 40%; */
+        float: right;
+    }
+    .navbar-toggler
+    {
+        /* transform: scale(0.7); */
+    }
+    
+    .leftNav {
+        width: 19%;
+        max-width: 19%;
+        position: unset;
+    }
+    .leftNav nav #navbarNavDropdown
+    {
+        top: 58px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link,
+    .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover, li.nav-item.active .nav-link, .navbar-expand-lg .navbar-nav li.nav-item.active .nav-link
+    {
+        color: #0353cc;
+    }
+    
+    .dropdown-menu.show {
+        min-width: fit-content;
+    }
+    .leftNav nav #navbarNavDropdown
+    {
+        display: none;
+    }
+    
+}   
+@media only screen and (max-width:768px) {
+    body
+    {
+        overflow-y: auto;
+    }
+    .newMenu .card-header .btn, .card-header
+    {
+        background-color: transparent;
+    }
+    .newMenu .card-header .btn h4
+    {
+        background-color: #0353cc;
+        border-radius: 0 30px 30px 0;
+        width: 40%;
+        padding: 5px 10px;
+        display: inline-block;
+    }
+    .rWbg ,.cartBigDiv,.scrollDiv{
+        margin-bottom: 0px;
+        height: auto !important;
+    }
+    .langDiv
+    {
+        display: none;
+    }
+    /* cart page  - ord  stat*/
+    .cartBigDiv .basicBtn,.loginBigDiv form.ordStat .basicBtn
+    {
+        position: relative;
+        bottom: 0;
+    }
+    .chkFinl,.noArr
+    {
+        padding: 0;
+    }
+    .menuBigDiv
+    {
+        height: auto !important;
+        padding-bottom: 70px;
+    }
+    .logTit {
+        width: 61%;
+        margin-bottom: 20px;
+    }
+    .leftNav {
+        width: 8%;
+        max-width: 8%;
+    }
+    .menuCol
+    {
+        margin-top: 10px;
+    }
+    .Ctitle
+    {
+        margin-top: 20px;
+    }
+    .leftNav nav #navbarNavDropdown,.mobNav
+    {
+    position: fixed;
+    z-index: 99;
+    transition: 0.3s all ease-in-out;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    left: -400px;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    padding: 10px;
+    padding-bottom: 8px;
+    padding-top: 0;
+    z-index: 9999999;
+    }
+    .closeNav
+    {
+        color: gray;
+        float: right;
+        border: 0;
+        background-color: transparent
+    }
+    .headerMenu nav,.headerMenu
+    {
+        position: unset;
+    }
+    .collapse 
+    {
+        /* margin-top: 10px; */
+        transition: 0.3s all ease-in-out;
+    }
+    nav .collapse.show ul,header nav li,
+    nav .collapse.show,nav #navbarNavDropdown
+    {
+        background-color: #fff;
+        color: #0353cc;
+    }
+    .dropdown-menu.show,
+    .dropdown-menu
+    {
+        right: 0 !important;
+        left: unset !important;
+        float: right;
+        transform:unset !important;
+        top: 54px  !important;
+    }
+    .loginBigDiv form
+    {
+        padding-top: 0;
+    }
+    .locBigDiv form, .deliveryDiv,.menuBigDiv, .searchBigDiv
+    {
+        margin-top: 0;
+    }
+    header .rightDrb a
+    {
+        float: right;
+        float: left;
+    }
+    header .rightDrb span
+    {
+        right: 0;
+        left: auto;
+    }
+    .headerArr
+    {
+        width: fit-content;
+        display: inline-block;
+        padding-right: 0;
+    }
+    .headerMenu
+    {
+        padding-left: 0;
+        display: inline-block;
+    }
+    .headerMenu .row 
+    {
+        margin:0
+    }
+    .cartItem .input-group input
+    {
+        margin-right: 0;
+    }
+    .addressDiv h5.del, .pickDiv h5.del
+    {
+        margin-top: 10px;
+    }
+    .locBigDiv form{
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+    .choItm img {
+        height: 280px;
+    }
+    .menuBigDiv,
+    .searchBigDiv {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0px;
+    }
+    .forMobOnly{
+        display: block;
+    }
+    .forDeskOnly {
+        display: none;
+    }
+    .menuSec {
+        padding-top: 0;
+    }
+    .midSearch {
+        width: 50%;
+        padding: 0
+    }
+    .rightDrb, .langDiv {
+        max-width: fit-content;
+        padding: 0;
+        /* padding-top: 30px; */
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-size: 16px;
+        padding: 0px 15px;
+    }
+    .lefArr svg {
+        margin-top: 5px;
+        transform: scale(0.7);
+    }
+    header .rightDrb span {
+        font-size: 11px;
+        padding-left: 10px;
+        margin-top: 5px;
+    }
+    header nav li,header nav li, header nav li:first-child
+    {
+        width: 100%;
+        border-bottom: 1px solid #ffffff6b;
+        border-radius: 0;
+        margin-left: 0;
+    }
+    header nav li:last-child
+    {
+        border-bottom: 0;
+    }
+
+    header .headerMenu .langDiv a {
+        font-size: 15px;
+        padding: 0;
+    }
+    .langDiv
+    {
+        margin-left: 5px;
+    }
+    .navbar-light .navbar-toggler
+    {
+        background-color: #fff;
+        padding: 0;
+        border: 0;
+        margin: 0 10px;
+    }
+    .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover, li.nav-item.active .nav-link, .navbar-expand-lg .navbar-nav li.nav-item.active .nav-link
+    {
+        background-color: transparent;
+        /* color: #0353cc; */
+    }
+    .priDiv
+    {
+        padding-left: 10px;
+    }
+    .newMenu .priDiv
+    {
+        padding: 0;
+    }
+    .newMenu .card-header .btn h4
+    {
+        margin-bottom: 0;
+    }
+}
+@media only screen and (max-width:425px) {
+    .chkFinl select
+    {
+        background-size: 12px;
+    }
+    .newMenu .card-header .btn, .card-header
+    {
+        font-size: 20px;
+        padding: 2px;
+    }.logTit h6
+    {
+        margin-top: 0;
+    }
+    .newMenu .btn i
+    {
+        margin:5px
+    }
+    .gridView.active .forGrid
+    {
+        line-height: 2;
+    } 
+    .gridView.active .btn.btn-link .forGrid i
+    {
+        margin: 0 5px;
+        line-height: 2;
+    padding: 0;
+    }
+    .forGrid a
+    {
+        margin-right: 0;
+    }
+    /* ana 3aiza elola bs */
+    .cartBigDiv .basicBtn, 
+    .loginBigDiv form.ordStat .basicBtn {
+        position: relative;
+        bottom: -35px;
+    }
+    .cartPage .itmDet .input-group-btn
+    {
+        width: 100%;
+    }
+    .cartPage .cartItem .input-group input {
+        width: 21px;
+        height: 24px;
+        margin: 0;
+    }
+    .homeGrid form input {
+        margin-top: -4px;
+        margin-left: 10px;
+    }
+    .homeGrid {
+        padding: 15px;
+    }
+    .dropdown-menu.show a {
+        padding: 1px;
+        font-size: 14px;
+    }
+    .dropdown-menu.show, .dropdown-menu
+    {
+        top: 40px !important;
+    }
+    .rightDrb a.langDiv {
+        font-size: 14px;
+    }
+    .forMobOnly form.perfSerch {
+        width: 42%;
+        position: relative;
+        margin: 12px auto;
+        z-index: 9;
+        font-size: 14px;
+    }
+    .rightDrb ,.headerMenu .row{
+        padding: 0;
+    }
+    
+    .rightDrb
+    {
+        padding-right: 10px;
+    }
+    .rightDrb .dropdown, .rightDrb .langDiv {
+        margin: 0 ;
+    }
+    .rightDrb a {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    .gridViewMode .column .MenuRow img
+    {
+        height: 70px;
+        width: 70px;
+    }
+    .newMenu .gridViewMode .card-body ul li i {
+        top: 5px;
+        right: 0px;
+        font-size: 18px;
+    }
+    .newMenu .gridViewMode .card-body ul li.column .MenuRow .row div.foPrice,
+    .newMenu .gridView.active button.btn.addToCart,
+    .newMenu .gridViewMode .card-body ul li.column .MenuRow .row div
+    {
+        margin: 0;
+        text-align: center;
+        width: 100%;
+        font-size: 10px !important;
+    }
+    .newMenu .gridViewMode span
+    {
+        font-size: 12px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link, .rightDrb a {
+        padding: 5px 7px 0;
+    }
+    .leftNav
+    {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .rights
+    {
+        font-size: 14px;
+    }
+    .rights img {
+        width: 45px;
+    }
+    .perfSerch i,.homeGrid .perfSerch i {
+        right: 25px;
+        top: 24px;
+        font-size: 14px;
+    }
+    .bk i {
+        font-size: 25px;
+    }
+    .centerImg img {
+        margin: 7% auto;
+        margin-top: 15%;    
+    }
+    .printBtns .btn
+    {
+        padding: 5px 20px;
+    }
+    h6.adDetails {
+        font-size: 16px;
+        margin-left: 6%;
+    }
+    .ordrDtls table .qtyItms
+    {
+        padding: 0 8px;
+        font-size: 13px;
+    }
+    .ordrDtls .cartItem img
+    {
+        width: 55px;
+        height: 55px;
+        margin:0
+    }
+    .ordrDtls td
+    {
+        padding: 5px;
+        font-size: 12px;
+    }
+    .chkFinl h4, .Ctitle,.profileDiv a.itmDet
+    {
+        font-size: 19px;
+    }
+    .cartItem h5,.cartItem span
+    {
+        font-size: 13px;
+    }
+    .chkFinl input, .chkFinl select, .fiOrder
+    {
+        font-size: 15px;
+    }
+    .subsSvg svg
+    {
+        transform: scale(0.7);
+    }
+    .subs span{
+        right: 15px;
+    }
+    .MenuRow img+div
+    {
+        width: 30%;
+    }
+    .foPrice,.addToCart
+    {
+        font-size: 13px;
+    }
+    .MenuRow img {
+        width: 80px;
+        height: 80px;
+    }
+    .addToCart
+    {
+        padding: 0 5px;
+        
+    }
+    .newMenu .card-body
+    {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .newMenu span, a.closebtn {
+        font-size: 17px;
+    }
+    header .rightDrb-menu.show a {
+        padding: 1px 10px;
+        font-size: 13px;
+    }
+    .headerArr
+    {
+        padding: 0;
+    }
+    header .row
+    {
+        margin:0;
+        width: 100%;
+    }
+    .midSearch form .col-12{
+        padding: 0;
+    }
+    .cartItem span.input-group-btn {
+        margin: 5px 0px;
+        font-size: 14px;
+    }
+    .cartItem .input-group input {
+        margin-right: 5px;
+        /* width: 30px; */
+        height: 30px;
+    }
+    
+    .noArr .headerMenu {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .cartBigDiv h5
+    {
+        margin-top: 0px;
+    }
+    .cartItem .input-group
+    {
+        float: right;
+    }
+    .cartBigDiv .cartItem h5
+    {
+        float: left;
+    }
+    .cartItmNa {
+        width: 130px;
+    }
+    .cartBigDiv ,.cartItem h5,.cartTot h5
+    {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .cartItem, .cartTot
+    {
+        padding: 15px 10px;
+    }
+    .cartItem h5
+    {
+        display: block;
+        width: 55%;
+        float: left;
+    }
+    .rTot{width: 60%;}
+
+    .locBigDiv .card-body label .row
+    {
+        padding: 0;
+    }
+    .locBigDiv .card-body label .row iframe{
+        padding: 10px;
+    }
+    .aLogWiz a span{font-size: 15px;}
+    .aLogWiz a div{
+        /* width: 60%; */
+        text-align: center;
+    }
+    .spPrice,
+    .itmDet small,
+    .itmLabl label {
+        font-size: 18px;
+    }
+    .itmDet label h5 {
+        font-size: 15px;
+    }
+    .itmDet h5 {
+        font-size: 13px;
+    }
+    .choItm img {
+        height: 180px;
+    }
+    .lefArr svg {
+        margin-top: 5px;
+        transform: scale(0.5);
+    }
+    .itmDet {
+        padding: 2px 10px;
+    }
+    .proDetailInner form button {
+        padding: 3px;
+        font-size: 19px;
+    }
+    header .headerMenu a, .langDiv ,.rightDrb i{
+        font-size: 14px;
+        margin: 0 1px;
+    }
+    .profHead i
+    {
+        font-size: 12px;
+    }
+    .rightDrb a.langDiv {
+        font-size: 16px;
+    }
+    .forMobOnly form.perfSerch i {
+        right: 5px;
+        top: 13px;
+    }
+    header .rightDrb span
+    {
+        margin-top: 0;
+        /* top: 0; */
+    }
+    .leftNav, .rightDrb, .langDiv
+    {
+        /* padding-top: 15px; */
+    }
+}
+@media only screen and (max-width:380px) {
+    header form input {
+        padding: 5px 10px;
+    }
+    .newMenu .card-header .btn h4
+    {
+        width: 65%;
+        font-size: 1rem;
+    }
+    .newMenu .btn i, 
+    .singleMethod img, .profileDiv a.itmDet i, .mobNav .btn {
+        font-size: 14px;
+    }
+    header a#profile {
+        padding-top: 19px;
+    }
+    .itemEditable p {
+        width: 73%;
+    }
+    .chRow1 .nav-pills .nav-link:hover, .chRow1 .nav-pills .nav-link
+    {
+        padding: 5px;
+        font-size: 14px;
+    }
+    .cartItmNa {
+        max-width: 55px;
+    }
+    .cartPage .cartItem img {
+        width: 50px;
+        height: 50px;
+    }
+    .newMenu .card-body,ul.pi_di
+    {
+        padding: 0;
+    }
+    .logTit {
+        width: 66%;
+    }
+    .gridViewMode .column .MenuRow img {
+        height: 63px;
+        width: 63px;
+    }
+    .newMenu .gridViewMode .card-body ul li i {
+        right: -2px;
+        font-size: 15px;
+    }
+    .navbar-light .navbar-toggler-icon {
+        background-size: 100%;
+        margin-top: -10px;
+    }
+    header .headerMenu a, .langDiv, .leftNav {
+        padding-top: 20px;
+    }
+    .forMobOnly form.perfSerch i {
+        top: 9px;
+        font-size: 12px;
+    }
+    .perfSerch input
+    {
+        padding: 1px 5px;
+    }
+    .newMenu .card-body ul li i
+    {
+        font-size: 16px;
+    margin-top: 5px;
+    }
+    .centerImg img {
+        margin: 9% auto;
+        margin-top: 18%;
+    }
+    .printBtns .btn {
+        padding: 2px 10px;
+        font-size: 13px;
+    }
+    .receiptPage .logTit
+    {
+        margin:0
+    }
+    .cartItem img {
+        width: 55px;
+        height: 40px;
+    }
+    .leftNav {
+        width: 16%;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+    .proDetailInner .itmDet
+    {
+        padding: 10px;
+    }
+    form .dnt, .itmDet h4 {
+        font-size: 15px;
+    }
+    .cartItem .input-group {
+        margin-top: -4px;
+    }
+    .itmDet .input-group input
+    {
+        height: 25px;
+    }
+    .cartItem .cartItmNa
+    {
+        display: block;
+    }
+    .cartBigDiv .cartItem h5
+    {
+        margin-top: 0;
+    }
+    .rightDrb svg, .navbar-toggler-icon {
+        transform: scale(0.9);
+    }
+    header .rightDrb span {
+        font-size: 8px;
+        padding-left: 18px;
+        /* index  */
+        padding-left: 12px;
+        /* margin-top: 8px; */
+    }
+    .midSearch {
+        /* width: 60%; */
+        margin-right: 5px;
+    }
+    .midSearch {
+        width: 47%;
+        margin-right: 10px;
+    }
+    header form i {
+        right: 10px;
+    }
+    .chkOt label
+    {
+        width: 45%;
+        height: 120px;
+        padding: 3px;
+    }
+    .rTot{width: 82%;}
+
+    .aLogWiz a div{
+        /* width: 70%; */
+        text-align: center;
+    }
+    .foPrice {
+        padding: 1px 4px;
+    }
+    .navbar-toggler {
+        padding: 0 5px
+    }
+    .choItm img {
+        height: 120px;
+    }
+    .locBigDiv form{
+        margin-top: 0;
+    }
+    .forGrid a,.gridView.active .btn.btn-link i
+    {
+        font-size: 15px;
+    }
+    .newMenu .card-header .btn, .card-header {
+        font-size: 17px;
+    }
+    .foPrice, .addToCart {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width:320px){
+    .gridViewMode .column .MenuRow img
+    {
+        height: 53px;
+        width: 60px;
+    }
+    .homeGrid form.perfSerch {
+        width: 88%;
+    }
+    .perfSerch i, .homeGrid .perfSerch i {
+        right: 23px;
+        top: 21px;
+    }
+    .newMenu .gridViewMode .card-body ul li i {
+        right: -5px;
+    }
+}
+
+/* @media only screen and (max-width:1024px){} */

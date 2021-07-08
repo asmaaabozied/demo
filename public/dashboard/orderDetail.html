@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dashboard</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/datepicker3.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+	<link href="css/styles.css" rel="stylesheet">
+	<!-- <link href="css/style_ar.css" rel="stylesheet"> -->
+</head>
+<body>
+	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse"><span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span></button>
+				<a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="">
+                </a>
+				<ul class="nav navbar-top-links navbar-right dNonMob">
+					<li class="dropdown">
+						<a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+						<span><small>english</small><i class="fa fa-chevron-down"></i></span>
+						</a>
+						<ul class="dropdown-menu dropdown-lang">
+							<li>ar</li>
+							<li>en</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+						<img src="img/user.png" alt="" class="uImg">
+						<span><small>john john</small><i class="fa fa-chevron-down"></i></span>
+						</a>
+						<ul class="dropdown-menu dropdown-lang">
+							<li>settings</li>
+							<li>settings</li>
+							<li>settings</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div><!-- /.container-fluid -->
+	</nav>
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		<ul class="nav menu">
+			<li class="active">
+				<a href="index.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+				Dashboard</a></li>
+			<h5>managment</h5>
+			<li class="parent dBMob">
+				<a data-toggle="collapse" href="#sub-item-1">
+				<i class="fa fa-gg-circle" aria-hidden="true"></i> english <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="fa fa-minus"></em></span>
+				</a>
+				<ul class="children collapse" id="sub-item-1">
+					<li><a class="" href="#">
+						 arabic
+					</a></li>
+					<li><a class="" href="#">
+						 french
+					</a></li>
+				</ul>
+			</li>
+			
+			<li class="parent dBMob">
+				<a data-toggle="collapse" href="#sub-item-1">
+				<i class="fa fa-gg-circle" aria-hidden="true"></i> john john <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="fa fa-minus"></em></span>
+				</a>
+				<ul class="children collapse" id="sub-item-1">
+					<li><a class="" href="#">setting</a></li>
+					<li><a class="" href="#">setting</a></li>
+				</ul>
+			</li>
+			<li><a href=""><i class="fa fa-shopping-bag" aria-hidden="true"></i>
+				products</a></li>
+			<li><a href=""><i class="fa fa-th" aria-hidden="true"></i>
+				category</a></li>
+			<li><a href=""><i class="fa fa-users" aria-hidden="true"></i>
+				customers</a></li>
+			<li><a href=""><i class="fa fa-globe" aria-hidden="true"></i>
+				country</a></li>
+			<li class="parent ">
+				<a data-toggle="collapse" href="#sub-item-1">
+				<i class="fa fa-gg-circle" aria-hidden="true"></i> currency <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="fa fa-minus"></em></span>
+				</a>
+				<ul class="children collapse" id="sub-item-1">
+					<li><a class="" href="#">
+						 dinar
+					</a></li>
+					<li><a class="" href="#">
+						 dollar
+					</a></li>
+					<li><a class="" href="#">
+						 ruby
+					</a></li>
+				</ul>
+			</li>
+			<li><a href=""><i class="fa fa-truck" aria-hidden="true"></i>
+				shipping</a></li>
+			<li><a href=""><i class="fa fa-file-o" aria-hidden="true"></i>
+				pages</a></li>
+			<h5>analytics</h5>
+			<li><a href=""><i class="fa fa-line-chart" aria-hidden="true"></i>
+				sales report</a></li>
+			<li><a href=""><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+				account</a></li>
+			<li><a href=""><i class="fa fa-cog" aria-hidden="true"></i>
+				setting</a></li>
+		</ul>
+	</div><!--/.sidebar-->
+	<div class="col-sm-offset-3 col-lg-8 col-lg-offset-2 main innerPage singProMain">
+		  <nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+			  <li class="breadcrumb-item">
+				  <a href="#">Home</a></li>
+			  <li class="breadcrumb-item">
+				  <a href="#">Library</a></li>
+			  <li class="breadcrumb-item active" aria-current="page">Data</li>
+			</ol>
+		  </nav>
+		<h1 class="page-header">Order #10</h1>
+		<div class="contentDiv">
+			<div class="col-md-12">
+				<div class="topLinks">
+					<h5>general</h5>
+				</div>
+				<div class="ppR">
+					<ul class="pull-right panel-settings panel-button-tab-right">
+						<li class="dropdown delRed btn-primary" style="background-color: #66C2A5;">
+							<a href="" class="btn "><i class="fa fa-arrow-left"></i></a>
+						</li>
+						<li class="dropdown setIco">
+							<a class="pull-right dropdown-toggle" data-toggle="dropdown" href="#">
+								<span><i class="fa fa-cog"></i> <i class="fa fa-chevron-down"></i></span>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li>
+									<ul class="dropdown-settings">
+										<li><a href="#">
+											<em class="fa fa-cog"></em> Settings 1
+										</a></li>
+										<li class="divider"></li>
+										<li><a href="#">
+											<em class="fa fa-cog"></em> Settings 2
+										</a></li>
+										<li class="divider"></li>
+										<li><a href="#">
+											<em class="fa fa-cog"></em> Settings 3
+										</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown btn-primary delRed">
+							<a class="pull-right btn" data-toggle="dropdown" href="#">create</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 bgWit">
+					<table class="ordDetTbl table display proTbl dataTable no-footer noBorderTbl">
+						<tr>
+							<th>product</th>
+							<th></th>
+							<th>Price</th>
+							<th>Quantity</th>
+							<th>Subtotal</th>
+						</tr>
+						<tr>
+							<td>
+								<img src="img/imgIco.png" alt="">
+							</td>
+							<td>
+								<h5>Nike Shirt</h5>
+								<h6>110210213</h6>
+							</td>
+							<td>10 kwd</td>
+							<td>
+								<div class="qtyInpt"><input type="tel" value="1"></div>
+							</td>
+							<td>50 kwd</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="img/imgIco.png" alt="">
+							</td>
+							<td>
+								<h5>Nike Shirt</h5>
+								<h6>110210213</h6>
+							</td>
+							<td>10 kwd</td>
+							<td>
+								<div class="qtyInpt"><input type="tel" value="1"></div>
+							</td>
+							<td>50 kwd</td>
+						</tr>
+					</table>
+					<div class="clearfix"></div>
+					<div class="col-md-12">
+						<div class="col-md-4 subTotOrd">
+							<table class="table display no-footer noBorderTbl">
+								<tr>
+									<th></th>
+									<th>totals</th>
+								</tr>
+								<tr>
+									<td>Subtotal:</td>
+									<td>50 Kwd</td>
+								</tr>
+								<tr>
+									<td>Shipping Cost:</td>
+									<td>50 Kwd</td>
+								</tr>
+								<tfoot>
+									<tr>
+										<td>Total:</td>
+										<td>100 Kwd</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="col-md-5 gTxtArea">
+						<label for="">Gift Message</label>
+						<div class="clearfix"></div>
+						<textarea name="" rows="7"></textarea>
+					</div>
+				</div>
+				<div class="col-md-12 bgWit">
+					<div class="col-md-4">
+						<h4>Customer Information</h4>
+						<h5>John Doe</h5>
+						<h6>abc@abc.com</h6>
+						<h6>+965 12345678</h6>
+					</div>
+					<div class="col-md-4 midBord">
+						<h4>Billing Address </h4>
+						<h5> Kuwait city</h5>
+						<h6>street 1, block 1, Dasman Complex</h6>
+						<h6>Kuwait</h6>
+						<h6>+965 12345678</h6>
+					</div>
+					<div class="col-md-4">
+						<h4>Shipping  Address</h4>
+						<h5>Kuwait city </h5>
+						<h6>street 1, block 1, Dasman Complex</h6>
+						<h6>Kuwait</h6>
+						<h6>+965 12345678</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	<!--/.main-->
+	<div class="col-lg-2 forFullWid innerPage">
+		<div class="topSell inpro">
+			<h6>status
+				<span class="dropdown">
+					<a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+					<span><small>in-progress</small><i class="fa fa-chevron-down"></i></span>
+					</a>
+					<ul class="dropdown-menu dropdown-lang">
+						<li>aaaa</li>
+						<li>aaaa</li>
+					</ul>
+				</span>
+			</h6>
+			<div class="clearfix"></div>
+			<table class="table noBorderTbl">
+				<tr>
+					<th colspan="2">Payment Information</th>
+				</tr>
+				<tr>
+					<td>Method</td>
+					<td>Knet ( Debit card )</td>
+				</tr>
+				</table>
+				<table class="table noBorderTbl">
+				<tr>
+					<th colspan="2"> Shipping Information</th>
+				</tr>
+				<tr>
+					<td>Method</td>
+					<td>Aramex</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="js/ckeditor.js"></script>
+	<script src="js/sample.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,387 @@
+body
+{
+    text-align: right;
+    direction: rtl;
+}
+.padR0 {
+    padding-left: 0;
+    padding-right: 16px;
+}
+
+.padL0 {
+    padding-right: 0;
+    padding-left: 16px;
+}
+header .dropdown a,.chkFinl h4, .Ctitle
+{
+    text-align: right;
+}
+header .dropdown span{
+    text-align: center;
+}
+.ordAg
+{
+    float: left;
+    margin-top: 0
+}
+#dropdownMenuButton svg{
+    display: block;
+    margin: auto;
+}
+header
+{
+    right: auto;
+    left: 0;
+    /* padding-right: 40px; */
+    padding-left: 0;
+}
+header nav li:first-child
+{
+    margin-left: 10px;
+}
+header nav li:last-child
+{
+    margin-left: 0;
+}
+.cartBigDiv .cartItem .prANord h5,
+.cartItem img
+{
+    float: right;
+    margin-right: 0;
+    margin-left: 20px;
+}
+.cartBigDiv .cartItem h5
+{
+    float: left;
+    margin-top: 0;
+}
+.cartItem .cartItmNa {
+    padding-left: 25px;
+    margin-top: 10px;
+}
+.cartItem .input-group
+{
+    margin-top: 0;
+}
+.lefArr svg ,.bk,.profileDiv a.itmDet i,.forGrid i{
+    transform: rotate(180deg) ;
+}
+.rTot,.rTot table,.cartTot a
+{
+    float: left;
+    text-align: left;
+}
+.lefArr
+{
+    margin-right: 0;
+}
+.del a,.foPrice,.itmDet h4 span,.spPrice,
+.locBigDiv .card button i,.pi_di .piBtn,
+.cartItem .addToCart
+{
+    float: left;
+}
+.locBigDiv .card button, .deliveryDiv .card a
+{
+    text-align: right;
+}
+.deliveryDiv .card a i
+{
+    float: left;
+    transform: rotate(-270deg) ;
+}
+.forGrid
+{
+    float: left;
+}
+.forGrid a
+{
+    margin-left: 10px;
+}
+.forGrid i
+{
+    margin-top: 10px;
+}
+.MenuRow span
+{
+    margin-right: 5px;
+    margin-left: 0;
+}
+.MenuRow
+{
+    border-left: 0px;
+    border-right: 2px solid transparent;
+}
+.itmDet label span:before
+{
+    left: 0;
+    right: auto;
+    float: left;
+}
+.homeGrid .perfSerch i
+{
+    left: 55px;
+    right: auto;
+}
+.homeGrid form input
+{
+    margin-left: 0;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+.homeGrid .bk i
+{
+    /* margin-top: -10px; */
+}
+.newMenu .gridViewMode .card-body ul li.column .MenuRow .row div.foPrice
+{
+    float: left;
+}
+.scrolItem h4
+{
+    text-align: right;
+}
+.loca span
+{
+    padding-right: 7px;
+}
+.locBigDiv .accordion>.card iframe
+{
+    padding: 0 9px 9px 0;
+}
+.chRow1 small
+{
+    padding-right: 10px;
+}
+.chkFinl select
+{
+    background-position-x:4%;
+}
+.subs span {
+    left: 30px;
+    right: auto;
+    transform: rotate(180deg);
+}
+.ordDetails table tr td:last-child
+{
+    text-align: left;
+}
+.singleMethod img,.newMenu .btn i,.profileDiv a.itmDet i,
+.mobNav .btn
+{
+    float: left;
+}
+.payMethod input
+{
+    float: right;
+}
+.sidenav
+{
+    right: 0;
+    left: auto;
+}
+.sidenav .closebtn
+{
+    right: auto;
+    left: 30px;
+    margin-left: 0;
+}
+.newMenu .card-header .btn, .card-header
+{
+    text-align: right;
+}
+#addToCartModalLabel .close
+{
+    margin-left: 0;
+}
+#addToCartModal .modal-footer button.btn.btn-secondary
+{
+    float: right;
+    margin-left: auto;
+    margin-right: 0;
+}
+header #cartDrop + .dropdown-menu.show {
+    left: 0;
+    right: auto;
+}
+header .dropdown span {
+    position: absolute;
+    left: 12px;
+}
+.navbar-expand-lg .navbar-nav .nav-link,.ordStat label
+{
+    text-align: right;
+}
+.logTit h6
+{
+    float: left;
+    text-align: left;
+    margin-left: 0;
+    margin-right: auto;
+}
+.priDiv ,.printBtns{
+    float: left;
+    margin-right: auto;
+    margin-left: 0;
+}
+.perfSerch i
+{
+    left: 30px;
+    right: auto;
+    margin-top: 5px;
+}
+.MenuRow img
+{
+    margin-left: 10px;
+    margin-right: 0;
+}
+.pi_di i
+{
+    left: 19px;
+    right: auto;
+}
+header .dropdown-menu
+{
+    margin-top: -15px;
+    left: 0;
+    right: auto !important;
+}
+header .dropdown-menu.show
+{
+    right: auto !important;
+}
+.dropdown.rightDrb{
+    margin-left: 0;
+    margin-right: auto;
+}
+.leftNav {
+    padding-left: 0%;
+    padding-right: 2%;
+}
+.modal-header .close,.mobNav .btn
+{
+    margin-left: 0;
+}
+div#btnContainer .btn
+{
+    padding-right: 15px;
+    padding-left: 0;
+}
+.mobNav .btn
+{
+    margin-right: auto;
+}
+.navbar-nav
+{
+    padding: 0;
+}
+.mobNav
+{
+    left: auto !important;
+}
+.rights span
+{
+    float: right;
+    margin-right: 0;
+    margin-left: 10px;
+}
+@media only screen and (max-width:1024px) {
+    .MenuRow span
+    {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    span.foPrice
+    {
+        float: left;
+    }
+    header .rightDrb
+    {
+        margin-right: auto !important;
+        margin-left: 0 !important;
+    }
+}
+ @media only screen and (max-width:768px) {
+    .homeHeader .headerMenu
+    {
+        width: 100%;
+    }
+    
+    header
+    {
+        padding-right: 10px;
+    }
+    .fit {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+    .midSearch
+    {
+        margin-right: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 10px;
+    }
+    .dropdown-menu.show,
+    .dropdown-menu
+    {
+        right: unset !important;
+        left: 0 !important;
+        float: right;
+    }
+    header .dropdown span
+    {
+        /* margin-top: 7px; */
+    }
+    .headerArr {
+        padding-left: 0;
+        padding-right: 10px;
+    }
+    
+}
+@media only screen and (max-width: 425px){
+    .cartItem .input-group {
+        float: right;
+    }
+    .perfSerch i, .homeGrid .perfSerch i {
+        left: 21px;
+        top: 19px;
+    }
+    .lefArr svg {
+        transform: rotate(180deg) scale(0.5);
+    }
+    .headerMenu
+    {
+        padding-right: 0;
+    }
+}
+@media only screen and (max-width: 380px){
+    header .dropdown span {
+        font-size: 8px;
+        padding-left: 5px;
+        margin-top: 0px;
+    }
+    header a#profile
+    {
+        padding-top: 18px;
+    }
+    .ordAg
+    {margin-top: 10px}
+    .cartBigDiv .cartItem .prANord h5
+    {
+        float: left;
+    }
+    .homeHeader .dropdown span
+    {
+        padding-left: 8px;
+    }
+    .homeHeader .fit {
+        margin-right: 20px;
+    }
+    .cartItem .input-group input {
+        margin-right: 0px;
+        margin-left: 2px;
+    }
+    .cartItem img {
+        margin-left: 10px;
+    }
+}

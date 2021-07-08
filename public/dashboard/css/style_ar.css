@@ -1,0 +1,187 @@
+@font-face {
+  font-family: 'M-SB';
+  src: url('../fonts/Montserrat-SemiBold.eot');
+  src: url('../fonts/Montserrat-SemiBold.eot') format('embedded-opentype'), url('../fonts/Montserrat-SemiBold.woff2') format('woff2'), url('../fonts/Montserrat-SemiBold.woff') format('woff'), url('../fonts/Montserrat-SemiBold.ttf') format('truetype'), url('../fonts/Montserrat-SemiBold.otf') format('otf');
+  font-weight: normal;
+  font-style: normal
+}
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+  float: right;
+}
+body {
+  direction: rtl;
+  text-align: right;
+  }
+  .panel-widget .text-muted,.dropdown-lang li,.priDv label
+  {
+    text-align: right;
+  }
+  .TopItem span,.p500, .ppR,.forFullWid,
+  #addRow, #addRow1, #addRow11
+  {
+    float: left;
+  }
+  .pull-right,.navbar-right,.dataTables_filter
+  {
+    float: left !important;
+  }
+  .pull-left,.navbar-brand,.topLinks a,.dataTables_length
+  {
+    float: right !important;
+  }
+  .TopItem img,.TopItem small
+  {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  .adProDiv .large,
+  .adProDiv .text-muted
+  {
+    text-align: center;
+  }
+  .row.progress-labels {
+    text-align: left;
+  }
+  .count-info i
+  {
+    margin-right: 6px;
+  }
+  .sidebar
+  {
+    right: 0;
+    left: auto;
+  }
+  .main {
+    margin-left: 0;
+    float: right;
+    margin-right: 16.6666666%;
+  } 
+  nav .container-fluid,.sidebar ul.nav li.parent ul li a
+  {
+    padding: 0;
+  }
+  .sidebar ul.nav li.parent ul li a
+  {
+    padding-right: 30px;
+  }
+  .p500
+  {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+  .dropdown-menu-right,.input-group-append,.uploadDiv div
+  {
+    left: 0;
+    right: auto;
+  }
+  .dropdown-lang li,.dropdown-lang
+  {
+    width: fit-content;
+    min-width:fit-content;
+  }
+  .dropdown-lang li
+  {
+    padding: 3px 30px;
+  }
+
+.main.innerPage 
+{
+  padding-left: 0;
+  padding-right: 16px;
+}
+.uploadDiv
+{
+  float: right;
+  
+}
+.subTotOrd
+{
+  float: left;
+}
+.uploadDiv img
+{
+  margin: 0;
+  margin-left: 5px;
+}
+.uploadDiv div,
+.uploadDiv input
+{
+  margin-right: 10px;
+  margin-left: 0;
+}
+.toggle.lg label span
+{
+  float: left;
+  margin-right: 5px;
+  margin-left: 0;
+}
+.gTxtArea
+{
+  float: none;
+  width: 100%;
+  
+}
+.topSell h6 span,
+.addCont2 #addRow, .addCont2 #addRowCust, .addCont2 #addcurrency, .addCont2 #addRowC
+{
+  float: left;
+}
+.flagDiv img
+{
+  right: 10px;
+  left: auto;
+}
+/* ------------------------------------------------------------------------------------------------------------------- responsive ------------------------------------- -------------------------------------------- -------------------------------- */
+
+@media (max-width: 1024px)
+{
+  .main,.col-lg-2.forFullWid.innerPage
+  {
+    margin-left: 0;
+    margin-right: 25%;
+  }
+  .col-lg-2.forFullWid.innerPage
+  {
+    float: right;
+  }
+}
+@media (max-width: 768px)
+{
+  .main,.col-lg-2.forFullWid.innerPage {
+      margin-left: 0;
+      margin-right: 32%;
+  }
+  .forFullWid.innerPage ul.panel-settings {
+    margin-top: 35px !important;
+  }
+  .main.innerPage
+  {
+    padding-left: 16px;
+  }
+  #sidebar-collapse {
+    width: 32%;
+  }
+  .uploadDiv
+  {
+    float: none;
+  }
+  
+  
+}
+
+@media (max-width: 600px)
+{
+
+  .dataTables_length {
+    float: none !important;
+    margin: 10px auto;
+    display: block;
+  }
+  .main,.col-lg-2.forFullWid.innerPage {
+    margin-left: 0;
+    margin-right: 0%;
+  }
+  #sidebar-collapse {
+    width: 100%;
+  }
+}
